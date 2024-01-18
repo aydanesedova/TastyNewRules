@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  min-height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222 !important;
+}
+header .container {
+  min-height: 104px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .tastyLogo {
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  padding-top: 5px;
+}
+header .container .tastyLogo h2 {
+  font-size: 20px;
+  font-family: Muli, Arial, sans-serif;
+  line-height: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+header .container .tastyList {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 80%;
+  gap: 40px;
+}
+header .container .tastyList a {
+  text-decoration: none;
+}
+header .container .tastyList a p {
+  font-size: 16px;
+  font-family: Muli, Arial, sans-serif;
+  line-height: 29px;
+  font-weight: 300;
+  color: #fff;
+}
+header .container .tastyList .search {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  min-height: 35px;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+header .container .tastyList .search input {
+  width: 80%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+header .container .tastyList .search button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+header .dropdown {
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+header .dropdown button {
+  background-color: transparent !important;
+  border: none;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 800px) {
+  header .container .tastyList {
+    display: none;
+  }
+  header .container .dropdown {
+    display: block;
+  }
+  header .container .dropdown .dropdown-menu {
+    padding-left: 15px;
+  }
+  header .container .dropdown .dropdown-menu a {
+    text-decoration: none;
+  }
+  header .container .dropdown .dropdown-menu a p {
+    font-size: 16px;
+    font-family: Muli, Arial, sans-serif;
+    line-height: 29px;
+    font-weight: 300;
+    color: #222;
+  }
+}
+footer {
+  min-height: 760px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #27272B;
+  justify-content: center;
+}
+footer .tasty {
+  width: 100%;
+}
+footer .tasty h2 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+footer .tasty p {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .tasty p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .tasty .icons {
+  display: flex;
+  gap: 10px;
+}
+footer .tasty .icons i {
+  width: 40px;
+  font-size: 24px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #323236;
+}
+footer .opening {
+  width: 100%;
+}
+footer .opening h2 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+footer .opening .week {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 280px;
+}
+footer .opening .week span {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .opening .week span span {
+  color: #fff;
+}
+footer .contactCon {
+  width: 100%;
+}
+footer .contactCon h2 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+footer .contactCon .street {
+  min-height: 270px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .contactCon .street p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .newsletter {
+  width: 100%;
+}
+footer .newsletter h2 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+footer .newsletter .newsletterTxt {
+  min-height: 170px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .newsletter .newsletterTxt p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .newsletter .newsletterTxt .subscribe {
+  width: 100%;
+  border: 1px solid #515155;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .newsletter .newsletterTxt .subscribe i {
+  color: #8b8b92;
+}
+footer .newsletter .newsletterTxt .subscribe input {
+  border: none;
+  background-color: transparent;
+}
+footer .copyright {
+  min-height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+footer .copyright p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+main #formContainer {
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #formContainer #myForm {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  border: 2px solid #222;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 30px;
+}
+main #formContainer #myForm h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #formContainer #myForm div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+main #formContainer #myForm div input {
+  width: 70%;
+  border-radius: 0px;
+  border: 2px solid #d1d1d6;
+}
+main #formContainer #myForm div button {
+  width: 13%;
+  background-color: #222;
+  border: none;
+  border-radius: 0px;
+  font-weight: 500;
+}
+
+#addContainer {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+#addContainer #addProducts {
+  min-height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#addContainer #addProducts .miniDiv {
+  width: 32%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid #FFB400;
+}
+#addContainer #addProducts .miniDiv .nameItem {
+  font-size: 14px;
+}
+#addContainer #addProducts .miniDiv h2 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+#addContainer #addProducts .miniDiv button {
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFB400;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-group button {
+  background-color: #222;
+  border: none;
+}
+.btn-group button:hover {
+  background-color: #FFB400;
+}

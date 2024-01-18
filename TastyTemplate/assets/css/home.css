@@ -1,0 +1,619 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  min-height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed !important;
+  background-color: transparent;
+}
+header .container {
+  min-height: 104px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .tastyLogo {
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  padding-top: 5px;
+}
+header .container .tastyLogo h2 {
+  font-size: 20px;
+  font-family: Muli, Arial, sans-serif;
+  line-height: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+header .container .tastyList {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 80%;
+  gap: 40px;
+}
+header .container .tastyList a {
+  text-decoration: none;
+}
+header .container .tastyList a p {
+  font-size: 16px;
+  font-family: Muli, Arial, sans-serif;
+  line-height: 29px;
+  font-weight: 300;
+  color: #fff;
+}
+header .dropdown {
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+header .dropdown button {
+  background-color: transparent !important;
+  border: none;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 800px) {
+  header .container .tastyList {
+    display: none;
+  }
+  header .container .dropdown {
+    display: block;
+  }
+  header .container .dropdown .dropdown-menu {
+    padding-left: 15px;
+  }
+  header .container .dropdown .dropdown-menu a {
+    text-decoration: none;
+  }
+  header .container .dropdown .dropdown-menu a p {
+    font-size: 16px;
+    font-family: Muli, Arial, sans-serif;
+    line-height: 29px;
+    font-weight: 300;
+    color: #222;
+  }
+}
+#ourSpecials {
+  min-height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/assets/images/bg_2\ \(1\).jpg);
+}
+#ourSpecials .ourSpecialsTxt {
+  min-height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#ourSpecials .ourSpecialsTxt h1 {
+  color: #fff;
+  font-family: "Indie Flower", cursive;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 86px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ourSpecials .ourSpecialsTxt button {
+  width: 15%;
+  min-height: 60px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: Muli, Arial, sans-serif;
+  line-height: 29px;
+  font-weight: 300;
+  color: #fff;
+  transition: 0.4s ease;
+}
+#ourSpecials .ourSpecialsTxt button:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+@media screen and (max-width: 992px) {
+  #ourSpecials .ourSpecialsTxt h1 {
+    font-size: 40px;
+  }
+  #ourSpecials .ourSpecialsTxt button {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 449px) {
+  #ourSpecials .ourSpecialsTxt h1 {
+    font-size: 33px;
+  }
+  #ourSpecials .ourSpecialsTxt button {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 422px) {
+  #ourSpecials .ourSpecialsTxt h1 {
+    font-size: 25px;
+  }
+  #ourSpecials .ourSpecialsTxt button {
+    font-size: 5px;
+  }
+}
+#aboutTasty {
+  min-height: 660px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#aboutTasty .aboutImg {
+  width: 100%;
+}
+#aboutTasty .aboutImg img {
+  width: 100%;
+}
+#aboutTasty .aboutTastyTxt {
+  min-height: 500px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#aboutTasty .aboutTastyTxt span {
+  color: #8b8b92;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+#aboutTasty .aboutTastyTxt h1 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+}
+#aboutTasty .aboutTastyTxt p {
+  color: #8b8b92;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  width: 90%;
+}
+
+@media screen and (max-width: 992px) {
+  #aboutTasty .aboutTastyTxt span {
+    font-size: 10px;
+  }
+  #aboutTasty .aboutTastyTxt h1 {
+    font-size: 20px;
+  }
+  #aboutTasty .aboutTastyTxt p {
+    font-size: 12px;
+  }
+}
+#ourMenu {
+  min-height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#ourMenu .ourMenuTxt {
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#ourMenu .ourMenuTxt span {
+  color: #8b8b92;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+#ourMenu .ourMenuTxt h1 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+}
+#ourMenu #productsAll {
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#ourMenu #productsAll .miniDiv {
+  width: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#ourMenu #productsAll .miniDiv img {
+  width: 80%;
+  border-radius: 15px;
+}
+#ourMenu #productsAll .miniDiv h2 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+#ourMenu #productsAll .miniDiv .wishAdd {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#ourMenu #productsAll .miniDiv .wishAdd button {
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFB400;
+}
+#ourMenu #productsAll .miniDiv .wishAdd button i {
+  color: #FFB400;
+}
+#ourMenu .loadMore {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ourMenu .loadMore button {
+  width: 15%;
+  min-height: 60px;
+  border: 2px solid #FFB400;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: Muli, Arial, sans-serif;
+  line-height: 29px;
+  font-weight: 600;
+  color: #FFB400;
+  transition: 0.4s ease;
+}
+#ourMenu .loadMore button:hover {
+  background-color: #FFB400;
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  #ourMenu .ourMenuTxt span {
+    font-size: 10px;
+  }
+  #ourMenu .ourMenuTxt h1 {
+    font-size: 20px;
+  }
+  #ourMenu #productsAll {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #ourMenu #productsAll .miniDiv {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 541px) {
+  #ourMenu .loadMore #loadMore {
+    font-size: 8px;
+  }
+  #ourSpecials .ourSpecialsTxt button {
+    width: 50%;
+    font-size: 1.35rem;
+  }
+  #ourMenu .loadMore button {
+    font-size: 1.3rem;
+  }
+}
+#guests {
+  min-height: 530px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#guests .guestsSay {
+  min-height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#guests .guestsSay span {
+  color: #8b8b92;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+#guests .guestsSay h1 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+}
+#guests .dennisGreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#guests .dennisGreen img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+#guests .dennisGreen p {
+  min-height: 120px;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #8b8b92;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+#guests .dennisGreen .dennis {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+#guests .dennisGreen .italy {
+  color: #8b8b92;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 418px) {
+  #guests .guestsSay span {
+    font-size: 10px;
+  }
+  #guests .guestsSay h1 {
+    font-size: 20px;
+  }
+}
+#recentBlog {
+  min-height: 940px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#recentBlog .recentBlogTxt {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+#recentBlog .recentBlogTxt span {
+  color: #8b8b92;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+#recentBlog .recentBlogTxt h1 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+}
+#recentBlog .allPowerful {
+  width: 100%;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+#recentBlog .allPowerful img {
+  width: 100%;
+}
+#recentBlog .allPowerful span {
+  color: #8b8b92;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+#recentBlog .allPowerful h2 {
+  color: #222;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.4s ease;
+  width: 85%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#recentBlog .allPowerful h2:hover {
+  color: #ffb400;
+}
+#recentBlog .allPowerful .readMore {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#recentBlog .allPowerful .readMore h6 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+#recentBlog .allPowerful .readMore p {
+  color: #a5a5ab;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+footer {
+  min-height: 760px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #27272B;
+  justify-content: center;
+}
+footer .tasty {
+  width: 100%;
+}
+footer .tasty h2 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+footer .tasty p {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .tasty p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .tasty .icons {
+  display: flex;
+  gap: 10px;
+}
+footer .tasty .icons i {
+  width: 40px;
+  font-size: 24px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #323236;
+}
+footer .opening {
+  width: 100%;
+}
+footer .opening h2 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+footer .opening .week {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 280px;
+}
+footer .opening .week span {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .opening .week span span {
+  color: #fff;
+}
+footer .contactCon {
+  width: 100%;
+}
+footer .contactCon h2 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+footer .contactCon .street {
+  min-height: 270px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .contactCon .street p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .newsletter {
+  width: 100%;
+}
+footer .newsletter h2 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+footer .newsletter .newsletterTxt {
+  min-height: 170px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .newsletter .newsletterTxt p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .newsletter .newsletterTxt .subscribe {
+  width: 100%;
+  border: 1px solid #515155;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .newsletter .newsletterTxt .subscribe i {
+  color: #8b8b92;
+}
+footer .newsletter .newsletterTxt .subscribe input {
+  border: none;
+  background-color: transparent;
+}
+footer .copyright {
+  min-height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+footer .copyright p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}

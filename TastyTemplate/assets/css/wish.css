@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  min-height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222 !important;
+  background-color: transparent;
+}
+header .container {
+  min-height: 104px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .tastyLogo {
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  padding-top: 5px;
+}
+header .container .tastyLogo h2 {
+  font-size: 20px;
+  font-family: Muli, Arial, sans-serif;
+  line-height: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+header .container .tastyList {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 80%;
+  gap: 40px;
+}
+header .container .tastyList a {
+  text-decoration: none;
+}
+header .container .tastyList a p {
+  font-size: 16px;
+  font-family: Muli, Arial, sans-serif;
+  line-height: 29px;
+  font-weight: 300;
+  color: #fff;
+}
+header .dropdown {
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+header .dropdown button {
+  background-color: transparent !important;
+  border: none;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 800px) {
+  header .container .tastyList {
+    display: none;
+  }
+  header .container .dropdown {
+    display: block;
+  }
+  header .container .dropdown .dropdown-menu {
+    padding-left: 15px;
+  }
+  header .container .dropdown .dropdown-menu a {
+    text-decoration: none;
+  }
+  header .container .dropdown .dropdown-menu a p {
+    font-size: 16px;
+    font-family: Muli, Arial, sans-serif;
+    line-height: 29px;
+    font-weight: 300;
+    color: #222;
+  }
+}
+footer {
+  min-height: 760px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #27272B;
+  justify-content: center;
+}
+footer .tasty {
+  width: 100%;
+}
+footer .tasty h2 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+footer .tasty p {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .tasty p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .tasty .icons {
+  display: flex;
+  gap: 10px;
+}
+footer .tasty .icons i {
+  width: 40px;
+  font-size: 24px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #323236;
+}
+footer .opening {
+  width: 100%;
+}
+footer .opening h2 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+footer .opening .week {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 280px;
+}
+footer .opening .week span {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .opening .week span span {
+  color: #fff;
+}
+footer .contactCon {
+  width: 100%;
+}
+footer .contactCon h2 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+footer .contactCon .street {
+  min-height: 270px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .contactCon .street p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .newsletter {
+  width: 100%;
+}
+footer .newsletter h2 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+footer .newsletter .newsletterTxt {
+  min-height: 170px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .newsletter .newsletterTxt p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .newsletter .newsletterTxt .subscribe {
+  width: 100%;
+  border: 1px solid #515155;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .newsletter .newsletterTxt .subscribe i {
+  color: #8b8b92;
+}
+footer .newsletter .newsletterTxt .subscribe input {
+  border: none;
+  background-color: transparent;
+}
+footer .copyright {
+  min-height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+footer .copyright p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#wish {
+  min-height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+#wish #wishProducts {
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#wish #wishProducts .wishBox {
+  width: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#wish #wishProducts .wishBox img {
+  width: 80%;
+  border-radius: 15px;
+}
+#wish #wishProducts .wishBox h2 {
+  color: #404044;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+#wish #wishProducts .wishBox button {
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFB400;
+}
+#wish #wishProducts .wishBox button i {
+  color: #FFB400;
+}

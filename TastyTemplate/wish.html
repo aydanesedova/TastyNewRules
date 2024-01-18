@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="./assets/css/home.css">
+<link rel="stylesheet" href="./assets/css/wish.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="tastyLogo">
+                <h2>Tasty</h2>
+            </div>
+            <div class="tastyList">
+                <a href="/index.html">
+                    <p>Home</p>
+                </a>
+                <a href="">
+                    <p>Menu</p>
+                </a>
+                <a href="">
+                    <p>Specialties</p>
+                </a>
+                <a href="">
+                    <p>Reservation</p>
+                </a>
+                <a href="">
+                    <p>Blog</p>
+                </a>
+                <a href="">
+                    <p>Add</p>
+                </a>
+                <a href="">
+                    <p><i class="fa-solid fa-cart-shopping"></i></p>
+                </a>
+                <a href="">
+                    <p><i class="fa-solid fa-heart"></i></p>
+                </a>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bars"><span style="  font-size:16px;
+                        font-family: Muli, Arial, sans-serif; margin-bottom: 10px;"></span></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <a href="/index.html">
+                        <p>Home</p>
+                    </a>
+                    <a href="">
+                        <p>Menu</p>
+                    </a>
+                    <a href="">
+                        <p>Specialties</p>
+                    </a>
+                    <a href="">
+                        <p>Reservation</p>
+                    </a>
+                    <a href="">
+                        <p>Blog</p>
+                    </a>
+                    <a href="/addPage.html">
+                        <p>Add</p>
+                    </a>
+                    <a href="/cart.html">
+                        <p><i class="fa-solid fa-cart-shopping"></i></p>
+                    </a>
+                    <a href="/heart.html">
+                        <p><i class="fa-solid fa-heart"></i></p>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="wish">
+            <div id="wishProducts"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="tasty">
+                        <h2>Tasty</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.</p>
+                        <div class="icons"><i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-twitter"></i> <i
+                                class="fa-brands fa-twitter"></i></div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="opening">
+                        <h2>Opening Hours</h2>
+                        <div class="week">
+                            <span>Monday: <span>08: - 22:00</span></span>
+                            <span>Monday: <span>08: - 22:00</span></span>
+                            <span>Monday: <span>08: - 22:00</span></span>
+                            <span>Monday: <span>08: - 22:00</span></span>
+                            <span>Monday: <span>08: - 22:00</span></span>
+                            <span>Monday: <span>08: - 22:00</span></span>
+                            <span>Monday: <span>08: - 22:00</span></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="contactCon">
+                        <h2>Contact Information</h2>
+                       <div class="street">
+                        <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                        <p>+ 1235 2355 98</p>
+                        <p>info@yoursite.com</p>
+                        <p> email@email.com</p>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="newsletter">
+                        <h2>Newsletter</h2>
+                        <div class="newsletterTxt">
+                            <p>Far far away, behind the word mountains, far from the countries.</p>
+                            <div class="subscribe">
+                                <input type="text" name="" id="" placeholder="Subscribe">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="copyright">
+                        <p>Copyright ©2024 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by Colorlib</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/wish.js"></script>
+</body>
+</html>
